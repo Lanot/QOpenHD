@@ -214,7 +214,7 @@ iOSBuild {
     LIBS += -framework VideoToolbox -framework AudioToolbox -framework CoreAudio -framework CoreVideo -framework CoreMedia
     CONFIG -= bitcode
     #CONFIG += EnableGamepads
-    CONFIG += EnableSpeech
+    #CONFIG += EnableSpeech
     CONFIG += EnableMainVideo
     #CONFIG += EnableLog //does not work due to filepath not set
 
@@ -237,17 +237,17 @@ MacBuild {
     DISTFILES += mac/Info.plist
     LIBS += -framework ApplicationServices
     LIBS += -framework VideoToolbox -framework CoreVideo -framework CoreMedia
-    CONFIG += EnableSpeech
+    #CONFIG += EnableSpeech
 }
 
 LinuxBuild {
-    CONFIG += EnableSpeech
+    #CONFIG += EnableSpeech
     message("LinuxBuild - config")
 }
 
 JetsonBuild {
     message("JetsonBuild")
-    CONFIG += EnableSpeech
+    #CONFIG += EnableSpeech
 }
 
 WindowsBuild {
@@ -269,7 +269,7 @@ AndroidBuild {
 
 EnableSpeech {
     message("EnableSpeech")
-    DEFINES += ENABLE_SPEECH
+    #DEFINES += ENABLE_SPEECH
     QT += texttospeech
 }
 
