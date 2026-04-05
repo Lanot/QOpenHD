@@ -542,6 +542,7 @@ static std::vector<std::shared_ptr<XParam>> get_parameters_list(){
                 {"DISABLE",""},
                 {"DEFAULT","DEFAULT"},
                 {"/dev/serial0","/dev/serial0"},
+                {"/dev/ttyAMA0","/dev/ttyAMA0"},
                 {"/dev/ttyAMA1","/dev/ttyAMA1"},
                 {"/dev/ttyAMA2","/dev/ttyAMA2"},
                 {"/dev/ttyAMA3","/dev/ttyAMA3"},
